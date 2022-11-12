@@ -1,0 +1,875 @@
+@font-face {
+	font-family: "fippsregular";
+	src: url(/Font/fipps/fipps-regular-webfont.woff2) format("woff2"), url(./Font/fipps/fipps-regular-webfont.woff) format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "edit_undo_line_brkregular";
+	src: url(./Font/edunline/edunline-webfont.woff2) format("woff2"), url(./Font/edunline/edunline-webfont.woff) format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	/* --------------------reset -----------------*/
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+html {
+	background-image: url(./Images/wallpaperflare.com_wallpaper.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+body {
+	position: absolute;
+	font-family: "edit_undo_line_brkregular";
+	color: blanchedalmond;
+	font-size: 20px;
+	letter-spacing: 2px;
+	background: rgb(74, 85, 89);
+	background: radial-gradient(circle, rgb(85, 92, 95) 80%, rgb(36, 43, 44) 100%);
+	border: solid 5px rgb(33, 41, 33);
+	border-radius: 50px 50px 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 75vw;
+	margin: auto;
+}
+
+.screen {
+	position: absolute;
+	/* width: 1252px; */
+	/* height: 922px; */
+	width: 90%;
+	height: 96%;
+
+	/* ------------DEGRADE EFFET ECRAN TUBE CATHODIQUE-------- */
+	background: rgb(33, 41, 33);
+	background: radial-gradient(circle, rgb(36, 41, 36) 0%, rgba(32, 26, 30, 1) 50%);
+	/* --------------------------------------------------------- */
+
+	/* ---------CADRE DE L'ECRAN------------------ */
+	border-radius: 100% 100% 100% 100% / 15% 15% 15% 15%;
+	/* ----------------------------------------------- */
+
+	outline: solid 10px rgb(36, 43, 44);
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header {
+	width: 100%;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 6.5em;
+}
+
+h1 a {
+	color: blanchedalmond;
+}
+
+.new-game a {
+	/* ------------------DEGRADE SUR LE TEXTE NEW GAME---------- */
+	background: linear-gradient(0deg, rgba(255, 178, 2, 0.3) 0%, rgba(236, 122, 33, 0.5) 50%, rgba(255, 94, 4, 1) 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	/* ----------------------------------------------------------- */
+}
+.new-game {
+	font-family: "fippsregular";
+	font-size: 6.5em;
+	text-transform: uppercase;
+
+	/* ----------------ANIMATION NEW GAME------------------ */
+	animation-duration: 2s;
+	animation-name: start;
+	animation-iteration-count: infinite;
+}
+
+@keyframes start {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+/* --------------------------------------------------------- */
+
+.p-new-game {
+	font-family: "edit_undo_line_brkregular";
+	font-size: 2em;
+	color: blanchedalmond;
+}
+
+/* --------------FORMULAIRE DE CONTACT----------------- */
+.main-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+}
+.bloc-contact-map {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+.bloc-contact,
+.bloc-map {
+	width: 45%;
+}
+iframe {
+	width: 100%;
+	height: 100%;
+}
+form {
+	width: 100%;
+}
+.h2-form {
+	text-align: center;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+.p-form {
+	text-align: center;
+}
+
+input {
+	width: 100%;
+	padding: 10px 20px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: blanchedalmond;
+}
+
+textarea {
+	width: 100%;
+	padding: 15px 0px 0px 10px;
+	margin: 5px 0;
+	background-color: blanchedalmond;
+	border-radius: 4px;
+}
+.end {
+	display: flex;
+	justify-content: space-around;
+}
+input[type="submit"] {
+	font-family: "edit_undo_line_brkregular";
+	font-size: 1.7em;
+	width: 40%;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border-radius: 4px;
+	cursor: pointer;
+}
+input[type="submit"]:active {
+	transform: scale(0.95);
+}
+input[type="reset"] {
+	font-family: "edit_undo_line_brkregular";
+	font-size: 1.7em;
+	width: 40%;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border-radius: 4px;
+	cursor: pointer;
+}
+input[type="reset"]:active {
+	transform: scale(0.95);
+}
+/* ------------------------------------------------------------ */
+
+/* -----------------NAV BARRE------------------------ */
+
+.nav-list {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: blanchedalmond;
+	color: black;
+	border-radius: 4px;
+}
+
+.nav-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+/* Added by Nitha 08/06/2022 */
+.nav-bg-on-select {
+	background-color: rgb(250, 196, 228);
+}
+
+.nav-heart-icon {
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+}
+
+/* -------------------------------------------------- */
+
+/* -------------------PAGE D'ACCUEIL------------------------- */
+.bloc-accueil {
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.bloc-welcome {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 10px;
+}
+.bloc-welcome>h4 {
+	margin-bottom: 50px;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+.bloc-caroucel {
+	width: 50%;
+	padding: 10px;
+}
+
+/* --------------CAROUCEL PAGE D'ACCUEIL----------------------------- */
+#images {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: 50%;
+}
+
+#previous {
+	height: 50%;
+	width: 50%;
+	margin: 5px;
+	background-size: cover;
+	background-position: center;
+	background-image: url(./Images/4pexels-cottonbro-4835429.jpg);
+}
+#current {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-image: url(./Images/1pexels-cottonbro-4836371.jpg);
+}
+
+#next {
+	height: 50%;
+	width: 50%;
+	margin: 5px;
+	background-size: cover;
+	background-position: center;
+	background-image: url(./Images/2pexels-cottonbro-5767459.jpg);
+}
+/* ------------------------------------------------------ */
+
+.bloc-footer {
+	width: 95%;
+	border-top: dashed 1px blanchedalmond;
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.bloc-footer-reseaux {
+	display: flex;
+	flex-direction: row;
+}
+.bloc-footer-reseaux img {
+	width: 30px;
+	margin: 0 20px;
+	padding-bottom: 5px;
+}
+.bloc-footer-contact {
+	padding-top: 5px;
+	border-top: solid 2px blanchedalmond;
+	text-align: center;
+	font-size: 0.8rem;
+}
+/* --------------PAGE Liste des jeux------------------------ */
+.btn-jeux {
+	height: 15%;
+	width: 25%;
+}
+.btn-jeux-main{
+	display: flex;
+	height: 100%;
+	width: 100%;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin-left: 5%;
+}
+canvas{
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 10%;
+}
+
+/* ------------- Snake ---------------------*/
+
+#stage {
+	border: 2px solid rgb(151, 149, 149);
+}
+
+/* ------------------------------------------*/
+
+/* --------------PAGE PONG------------------------ */
+.pong-main {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.pong-h2 {
+	text-align: center;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+canvas {
+	border-radius: 4px;
+}
+/* --------------------------------------------------- */
+
+/* ----------------PAGE QUI SOMMES NOUS------------------ */
+
+.qsn-h2 {
+	text-align: center;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+	/* .... CSS des boutons : Notre Mission, Notre Histoire, Notre Equipe */
+
+		/* .... Mise en forme des boutons */
+
+		.qsn-buttons{
+			width: 30%;
+			height: 100px;
+			position: relative;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			font-family: "edit_undo_line_brkregular";
+			font-size: 2em;
+			background-color: white;
+			border : solid 5px #ee22c5;
+			border-radius: 12px;
+			cursor : pointer;
+		}
+
+		/* .... Animation au survol des bordures */
+	
+		.qsn-buttons::before{
+			display: inline-block;
+			position: absolute;
+			width: calc(100% + 10px);
+			height: 25px;
+			border-bottom-left-radius: 12px;
+			border-bottom-right-radius: 12px;
+			left: -5px;
+			right: 0;
+			bottom: -5px;
+			content: "";
+			font-size: 2rem;
+			background-color: white;
+			transition: width 0.5s,
+						height 0.5s 0.5s;
+			margin: auto;
+		}
+
+		.qsn-buttons::after{
+			display: inline-block;
+			position: absolute;
+			width: calc(100% + 10px);
+			height: 25px;
+			border-top-left-radius: 12px;
+			border-top-right-radius: 12px;
+			left: -5px;
+			right: 0;
+			top: -5px;
+			content: "";
+			font-size: 2rem;
+			background-color: white;
+			transition: width 0.5s,
+						height 0.5s 0.3s;
+			margin: auto;
+		}
+
+		.qsn-buttons:hover::before, .qsn-buttons:hover::after{
+			width: 0;
+			height: 5px;
+			border: none;
+			transition : height 0.5s,
+						width 0.5s 0.3s;
+
+		}
+
+	/* .... La petite animation de bas de page */
+
+		/* .... Bouton Play/Stop avec effet 3D */
+
+		.pushable-play-button{
+			position : relative;
+			bottom: 70px;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			background: hsl(340deg 100% 32%);
+			border: none;
+			padding: 0;
+			cursor: pointer;
+			outline-offset: 4px;
+		}
+		
+		.play-button-front{
+			display: flex;
+			position : relative;
+			height: 50px;
+			width: 50px;
+			align-items: center;
+			justify-content: center;
+			/*padding: 12px 42px; */
+			border-radius: 50%;
+			font-size: 1.3rem;
+			background: hsl(345deg 100% 47%);
+			color: white;
+			transform: translateY(-6px);
+		}
+		
+		.pushable-play-button:active .play-button-front {
+			transform: translateY(-2px);
+		  }
+
+		/* .... Icone qui se déplace au clic du bouton */
+
+		.moving-icon{
+			position: absolute;
+			bottom : 12%;
+			left: 5%;
+			width: 40px;
+			height: 40px;
+			z-index: 2;
+		}
+
+		@keyframes moving-icon{
+			from{
+				transform: translateX();
+			}
+			to{
+				transform: translateX(1200px);
+			}
+		}
+		
+		.anim-start{
+			animation: moving-icon 5s ease-in-out alternate infinite;
+		}
+
+		/* .... Le message caché */
+
+		.hidden-msg{
+			position : relative;
+			width : 90%;
+			height: 40px;
+			bottom : 22%;
+			left: 5%;
+			text-align: center;
+		}
+
+		#hidden-msg-front{
+			position : relative;
+			content: "";
+			width : 90%;
+			height: 40px;
+			bottom : 16%;
+			left: 5%;
+			background: rgba(32, 26, 30, 1);
+			z-index:1;
+			transform-origin: 100% 0%;
+		}
+
+		@keyframes showhide-msg{
+			from{
+				transform: scaleX(1);
+			}
+			to{
+				transform: scaleX(0);
+			}
+		}
+		
+		.showhide-msg{
+			animation: showhide-msg 4.9s ease-in-out alternate infinite;
+		}
+
+	/* .... La nouvelle fenêtre d'affichage au clic des boutons Notre Mission, Notre Histoire, Notre Equipe */
+
+		/* .... Mise en page de la fenêtre */
+
+		#board{
+			display: flex;
+			flex-direction: column;
+			position : absolute;
+			/* margin-top: 5%; */
+			/* top : -1%; */
+			width: 100%;
+			height: 100%;
+			/* height: 70%;
+			width: 60%; */
+			background-color: blanchedalmond;
+			border-radius: 100% 100% 100% 100% / 15% 15% 15% 15%;
+			transform: scale(0, 0);
+			z-index:3;
+		}
+
+		.board-main-content-container{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			height: 90%;
+			width: 100%;
+			margin: auto;
+		}
+
+		/* .... Bloc titre de la nouvelle fenêtre */
+
+		.board-title-container{
+			position: relative;
+			display: flex;
+			width: 100%;
+			height: 20%;
+
+		}
+
+		#board h3{
+			position: relative;
+			top: 0;
+			bottom: 0;
+			left: 25px;
+			margin: auto;
+			color: black;
+			width: calc(100% - 100px);
+			text-align: center;
+			font-size: 4em;
+			font-family: "edit_undo_line_brkregular";
+		}
+
+		/* .... Bouton "Fermer" avec effet 3D */
+
+		.pushable-close-button{
+			position : relative;
+			top: 0;
+			bottom: 0;
+			height: 50px;
+			width: 50px;
+			margin: auto;
+			border-radius: 50%;
+			background: hsl(340deg 100% 32%);
+			border: none;
+			padding: 0;
+			cursor: pointer;
+			outline-offset: 4px;
+		}
+		
+		.close-button-front{
+			display: flex;
+			position : absolute;
+			top: 0;
+			height: 50px;
+			width: 50px;
+			align-items: center;
+			justify-content: center;
+			/*padding: 12px 42px; */
+			border-radius: 50%;
+			font-size: 1.7rem;
+			background: hsl(345deg 100% 47%);
+			color: white;
+			transform: translateY(-6px);
+		}
+		
+		.pushable-close-button:active .close-button-front {
+			transform: translateY(-2px);
+		  }
+
+		  		/* .... ## NON UTILISE - AVOIR SI ON CONSERVE OU NON ## */
+
+				/* #close {
+					position: absolute;
+					top: 5%;
+					left: 85%;
+					border-radius: 50px;
+					height: 10%;
+					width: 5%;
+					background-color: red;
+				}
+				#close:hover #test1 {
+					transition: 1s;
+					transform: rotate(45deg);
+				}
+				#close:hover #test2 {
+					transition: 1s;
+					transform: rotate(-45deg);
+				} */
+
+
+		/* .... Bloc contenur de la nouvelle fenêtre */
+
+		.board-content-container{
+			position: relative;
+			display: flex;
+			width: 100%;
+			height: 80%;
+		}
+
+		#board-text{
+			position: relative;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			text-align: justify;
+			color: black;
+			font-family: "edit_undo_line_brkregular";
+			font-size: 1.5em;
+			/* margin-top: 15%;
+			margin-left: 5%; */
+			width: 40%;
+		}
+
+		#board-video{
+			display: block;
+			position: relative;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			width : 50%;
+			height: 50%;
+		}
+
+		
+
+		/* .... */
+
+
+
+
+#boutons{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+/* button {
+	/* margin-top: 10%;
+	/* margin-inline: 2vw; 
+	/* padding-inline: 2vw; 
+	font-size: 2em;
+	height: auto;
+	width: 200px;
+	text-align: center;
+	font-family: "edit_undo_line_brkregular";
+	background-color: rgb(159, 168, 170);
+	border-radius: 4px;
+} */
+
+/* button:hover {
+	background-color: rgb(36, 38, 39);
+	outline: solid 1px rgb(250, 196, 228);
+} */
+
+/* button:active {
+	background-color: rgb(78, 83, 85);
+} */
+
+
+
+#test1 {
+	position: absolute;
+	left: 35%;
+	border-radius: 50px;
+	/* transform: rotate(45deg); */
+	height: 100%;
+	width: 25%;
+	background-color: white;
+}
+#test2 {
+	position: absolute;
+	left: 35%;
+	border-radius: 50px;
+	/* transform: rotate(-45deg); */
+	height: 100%;
+	width: 25%;
+	background-color: white;
+}
+
+
+
+
+/* .button{
+	display: flex;
+	justify-content: space-between;
+	justify-items: flex-start;
+	/* margin-top: 10%;
+	/* margin-inline: 2vw;
+	/* padding-inline: 2vw;
+	font-size: 2em;
+	/* height: 75%;
+	width: 25%;
+	text-align: center;
+	font-family: "edit_undo_line_brkregular";
+	background-color: rgb(159, 168, 170);
+	border-radius: 4px;
+} */
+
+/* #mission {
+	padding-inline: 2vw;
+} */
+
+.lightsaber-icon{
+	display:none;
+}
+
+#mission:hover .lightsaber-icon{
+	display: block;
+	position: relative;
+	left: 0;
+}
+
+
+/* #histoire:hover .horser-icon{
+	animation-play-state: running;
+} */
+
+/* ------------------------------------------------------ */
+
+/* ---------------RESPONSIVE----------------------------- */
+@media (max-width: 1440px) {
+	body {
+		font-size: 13px;
+	}
+}
+
+/* ------------Tablette-------------------- */
+@media (max-width: 920px) {
+	body {
+		font-size: 12px;
+		height: 100vh;
+		width: 100vw;
+	}
+	h2 {
+		font-size: 4em;
+	}
+	.screen {
+		height: 95vh;
+		width: 95vw;
+		border: solid 5px rgb(36, 43, 44);
+	}
+}
+
+/* ----------------Mobile------------------------ */
+@media (max-width: 430px) {
+	body {
+		font-size: 9px;
+		height: 100vh;
+		width: 100vw;
+		border-radius: 0;
+	}
+	h1{
+		margin-top: 15px;
+		
+	}
+	.new-game {
+		font-size: 3.95em;
+	}
+	.screen {
+		height: 95vh;
+		width: 95vw;
+		border: solid 5px rgb(36, 43, 44);
+		overflow: auto;
+	}
+	/* ------PAGE D'ACCUEIL------ */
+	.bloc-accueil {
+		flex-wrap: wrap;
+		overflow: auto;
+	}
+	.bloc-accueil
+	.bloc-welcome,
+	.bloc-caroucel,
+	#images
+	{
+		width: 100%;
+	}
+	
+
+	/* --------FORMULAIRE DE CONTACT--------- */
+	/* .main-contact {
+		overflow: auto;
+	} */
+	
+	.bloc-contact-map{
+		flex-wrap: wrap;
+	}
+	.bloc-contact,
+	.bloc-map {
+		width: 100%;
+}
+
+}
+
+
+.neonText:hover {
+	animation: flicker 1.5s infinite alternate;
+	color: blanchedalmond;
+}
+@keyframes flicker {
+    
+	0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+		text-shadow:
+		0 0 7px blanchedalmond,
+      	0 0 10px blanchedalmond,
+      	0 0 21px blanchedalmond,
+      	0 0 42px #ee22c5,
+      	0 0 82px #ee22c5,
+      	0 0 92px #ee22c5,
+      	0 0 102px #ee22c5,
+      	0 0 151px #ee22c5;
+	
+	}
+	
+	20%, 24%, 55% {        
+		text-shadow: none;
+	}    
+  }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Arcade</title>
+		<link rel="stylesheet" href="./main.css" />
+	</head>
+	<body>
+		<div class="screen">
+			<header>
+				<h1><a class="neonText" href="./NewGame.html">arkades</a></h1>
+				<nav>
+					<ul class="nav-list">
+						<li id="Accueil" class="nav-item">
+							<a href="./Page D'acceuil.html">Accueil</a>
+						</li>
+						<li id="QuiSommesNous" class="nav-item nav-bg-on-select">
+							<img src="./Images/coracaozinho-para-o-luiz-otavio.svg" alt="" class="nav-heart-icon">
+							<a href="./QuiSommesNous.html">Qui sommes nous</a>
+						</li>
+						<li id="Jeux" class="nav-item">
+							<a href="./ListeDesJeux.html">Jeux</a>
+						</li>
+						<li id="Contact" class="nav-item">
+							<a href="./Form.html">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<div id="boutons">
+					<!-- <img src="./Images/icons8-lightsaber.svg" alt="" class="lightsaber-icon"> -->
+					<!-- <img src="./Images/icons8-licorne.gif" alt="" class="horse-icon"> -->
+					<button id="mission" class="button qsn-buttons">Notre Mission</button>
+					<button id="histoire" class="button qsn-buttons">Notre Histoire</button>
+					<button id="equipe" class="button qsn-buttons">Notre Equipe</button>
+				</div>
+				<button class="pushable-play-button"><span id="play-button" class="play-button-front">▷</span></button>
+				<img id="moving-icon" src="./Images/icons8-mushroom-49.png" alt="" class="moving-icon">
+				<div id="hidden-msg-front"></div>
+				<div class="hidden-msg">Website made with ♥️ by Juju, Suley & Nitha ©</div>
+			</main>
+			<div id="board">
+				<div class="board-main-content-container">
+					<div class="board-title-container">
+						<h3 id="board-title"></h3>
+						<button  class="pushable-close-button"><span id="close-button" class="close-button-front">✖</span></button>
+					</div>
+					<div class="board-content-container">
+						<p id="board-text"></p>
+						<iframe id="board-video" title="vimeo-player" src="https://player.vimeo.com/video/358296442?h=8b59dc64ae" frameborder="0" allowfullscreen></iframe>
+						<!-- <div id="close">
+							<div id="test1"></div>
+							<div id="test2"></div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+			
+			<footer class="bloc-footer">
+				<div>
+					<ul class="bloc-footer-reseaux">
+						<li>
+							<a href="#"><img src="./Images/facebook-tile.svg" alt="icones reseaux sociaux" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="./Images/twitter-tile.svg" alt="icones reseaux sociaux" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="./Images/instagram-tile.svg" alt="icones reseaux sociaux" /></a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<ul class="bloc-footer-contact">
+						<li>Adresse: 3050 Route de Lyon / 01000 Bourg-en-Bresse</li>
+						<li>Email: contact@arkades.fr</li>
+						<li>Tél: 06 06 06 06 06</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</body>
+	<script src="./script.js"></script>
+</html>
